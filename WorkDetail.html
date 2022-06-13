@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wolds details </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="max-w-6xl mx-auto px-5">
+        <header>
+            <div class="flex justify-end">
+            <button class="md:hidden" id="button">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+        </div>
+            <div class="mt-2">
+                <ul class="md:flex hidden font-medium justify-end md:space-x-8 py-5" id="menu">
+                    <li><a href="" class="hover:underline hover:text-red-500">Blog</a></li>
+                    <li><a href="" class="hover:underline text-red-500">Works</a></li>
+                    <li><a href="" class="hover:underline hover:text-red-500">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <script>
+            const button =document.getElementById('button');
+            const menu = document.getElementById('menu');
+
+            button.addEventListener('click', function(){
+                menu.classList.toggle('hidden');
+
+            });
+        </script>
+    </div>
+    <div class="max-w-4xl mx-auto px-5">
+        <div class="my-20 ">
+            <div class="my-10 hover:underline"><a href="">
+                    <h1 class="text-[44px] font-bold text-[#21243D]">Designing Dashboards with</h1>
+                    <h1 class="text-[44px] font-bold text-[#21243D]">usability in mind</h1>
+                </a>
+            </div>
+            <div class="flex space-x-4 items-center py-5">
+                <span class="inline-block bg-[red] px-2 font-bold text-white rounded-full ">2020</span>
+                <span class="text-[#8695A4]">Dashboard, User Experience Design</span>
+            </div>
+            <p class="text-[#21243D] mb-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit
+                officia consequat duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <div>
+                <img src="./img/Rectangle 4@2x.png" alt="" class="w-full">
+            </div>
+        </div>
+        <div>
+            <div class="mb-5">
+            <h2><a href="" class="font-medium text-[30px]">Heading 1</a></h2>
+            <h3><a href="" class="font-medium text-[24px]">Heading 2</a></h3>
+            <p class="text-[#21243D] mb-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="mb-5">
+                <img src="./img/Rectangle 5.png" alt="" class="w-full">
+            </div>
+            <div>
+                <img src="./img/Rectangle 6 (1).png" alt="" class="w-full">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="max-w-6xl mx-auto px-5 py-12">
+            <div class="justify-center flex space-x-8 py-2">
+                <a href=""><img src="img/logo1.svg" alt=""></a>
+                <a href=""><img src="img/logo2.svg" alt=""></a>
+                <a href=""><img src="img/logo3.svg" alt=""></a>
+                <a href=""><img src="img/logo4.svg" alt=""></a>
+            </div>
+            <p class="text-[14px] text-center">Copyright ©2020 All rights
+                reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
